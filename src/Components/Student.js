@@ -19,7 +19,6 @@ const Student = () => {
     </tr>
   </thead>
   <tbody>
-
     {student.map((student)=> (
         <tr key={student.id}>
         <th scope="row">{student.Name}</th>
@@ -28,14 +27,7 @@ const Student = () => {
         <td>{student.Batch}</td>
         <td>{student.Change}</td>
         <td><Link to="/edit"> Edit </Link></td>
-        
-       
-
-      </tr>
-
-    ))}
-  
-   
+      </tr>   ))}  
   </tbody>
 </table>
         </div>
